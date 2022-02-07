@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+}
+
+
+#container{
+    margin: 100px auto;
+    max-width: 600px;
+    height: 200px;
+    background-color: blue;
+    color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer{
+    text-align: center;
+    color: rgb(251, 255, 0);
+    font-size: 50px;
+}
+
+h1{
+    margin: 0 10px;
+    font-size: 50px;
+}
