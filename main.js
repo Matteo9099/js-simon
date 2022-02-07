@@ -1,11 +1,11 @@
 // inizializzo container
 const htmlNumeri = document.getElementById('container');
-
+const numberRandom = randomNumber(90);
 
 play();
 
 
-function play(){
+function play() {
 
     //genero numeri casualmente nel dom
     for (let i = 0; i < 5; i++) {
@@ -55,7 +55,7 @@ function play(){
     // creo una funzione che mi restituisce i numeri uguali
     function numberSame(valore) {
         if (valore == numberRandom) {
-            htmlNumeri.innerText = valore;
+            htmlNumeri.innerHTML = valore;
         } else {
             htmlNumeri.innerHTML = "";
         }
@@ -66,7 +66,7 @@ function play(){
 
 
 
-  // creo una funzione che generi numeri casuali
-  function randomNumber(number) {
+// creo una funzione che generi numeri casuali
+function randomNumber(number) {
     return Math.floor(Math.random() * (number - 1 + 1) + 1);
 }
